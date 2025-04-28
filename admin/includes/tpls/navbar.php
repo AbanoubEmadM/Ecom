@@ -29,7 +29,7 @@
                     <a class="dropdown-item" href="#"><?php echo lang('EDIT_PROFIELS') ?></a>
                     <a class="dropdown-item" href="#"><?php echo lang('SETTINGS') ?></a>
                     <div class="dropdown-divider"></div>
-                    <a class="dropdown-item" href="#"><?php echo lang('LOGOUT') ?></a>
+                    <a class="dropdown-item" href="logout.php"><?php echo lang('LOGOUT') ?></a>
                 </div>
             </li>
         </ul>
