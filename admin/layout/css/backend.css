@@ -1,0 +1,35 @@
+body {
+    background-color: #f4f4f4;
+}
+
+/* Start Login Form */
+.login {
+    width: 300px;
+    margin: 100px auto;
+}
+.login input {
+    margin-bottom: 10px;
+}
+.login .form-control {
+    background-color: #eee;
+}
+/* End Login Form */
+
+/* Start Navbar */
+.navbar-brand {
+    font-size: 1em;
+    font-weight: normal !important;
+}
+li.active {
+    background-color: #1B9CFC;
+}
+.dropdown-menu a:hover {
+    background-color: #1B9CFC;
+    color: #fff;
+    transition: 0.3s;
+    -webkit-transition: 0.3s;
+    -moz-transition: 0.3s;
+    -ms-transition: 0.3s;
+    -o-transition: 0.3s;
+}
+/* End Navbar */
