@@ -5,7 +5,7 @@ function lang($phrase)
         'HOME' => 'Home',
         'CATEGORIES' => 'Categories',
         'DROPDOWN' => 'Dropdown',
-        'EDIT_PROFIELS' => 'Edit Profils',
+        'EDIT_PROFIELS' => 'Edit Profiles',
         'SETTINGS' => 'Settings',
         'LOGOUT' => 'Logout',
         'ITEMS' => 'Items',

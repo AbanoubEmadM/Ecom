@@ -26,7 +26,7 @@
                     <?php echo isset($_SESSION['username']) ? $_SESSION['username'] : 'Login' ?>
                 </a>
                 <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                    <a class="dropdown-item" href="#"><?php echo lang('EDIT_PROFIELS') ?></a>
+                    <a class="dropdown-item" href="members.php?do=Edit&userid=<?php echo $_SESSION['ID'] ?>"><?php echo lang('EDIT_PROFIELS') ?></a>
                     <a class="dropdown-item" href="#"><?php echo lang('SETTINGS') ?></a>
                     <div class="dropdown-divider"></div>
                     <a class="dropdown-item" href="logout.php"><?php echo lang('LOGOUT') ?></a>
