@@ -7,12 +7,15 @@ body {
     width: 300px;
     margin: 100px auto;
 }
+
 .login input {
     margin-bottom: 10px;
 }
+
 .login .form-control {
     background-color: #eee;
 }
+
 /* End Login Form */
 
 /* Start Navbar */
@@ -20,9 +23,11 @@ body {
     font-size: 1em;
     font-weight: normal !important;
 }
+
 li.active {
     background-color: #1B9CFC;
 }
+
 .dropdown-menu a:hover {
     background-color: #1B9CFC;
     color: #fff;
@@ -32,4 +37,19 @@ li.active {
     -ms-transition: 0.3s;
     -o-transition: 0.3s;
 }
+
 /* End Navbar */
+
+/* Start Memeber Page */
+
+h1 {
+    font-size: 55px;
+    margin: 40px 0;
+    font-weight: bold;
+}
+
+.container {
+    margin: 20px;
+}
+
+/* End Memeber Page */
