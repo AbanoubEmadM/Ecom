@@ -1,6 +1,15 @@
+/* Start Main Rules */
 body {
     background-color: #f4f4f4;
 }
+.asterisk {
+    font-size: 30px;
+    position: absolute;
+    right: 30px;
+    top: 33px;
+    color: red;
+}
+/* End Main Rules */
 
 /* Start Login Form */
 .login {
@@ -49,7 +58,96 @@ h1 {
 }
 
 .container {
-    margin: 20px;
+    margin: 20px auto;
 }
 
+.form-group {
+    position: relative;
+}
+
+.show-pass {
+    position: absolute;
+    top: 32px;
+    right: -54px;
+}
+        
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    border: 1px solid #3498db;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+th {
+    background-color: #3498db;
+    color: white;
+    padding: 12px 15px;
+    text-align: left;
+    font-weight: bold;
+}
+
+td {
+    padding: 12px 15px;
+    text-align: left;
+    border-bottom: 1px solid #ecf0f1;
+}
+td a {
+    margin-right: 5px;
+}
+tr:hover {
+    background-color: #f8f9fa;
+}
+
+tr:nth-child(even) {
+    background-color: #f2f9ff;
+}
 /* End Memeber Page */
+
+/* Start Dashboard Page */
+.home-stats .stat {
+    color: #fff;
+    border-radius: 7px;
+    border: 1px solid #ccc;
+    padding: 20px;
+    font-size: 15px;
+    -webkit-border-radius: 7px;
+    -moz-border-radius: 7px;
+    -ms-border-radius: 7px;
+    -o-border-radius: 7px;
+}
+.home-stats .stat span {
+    display: block;
+    font-size: 50px;
+}
+.home-stats .stat a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.home-stats .st-members {
+    background-color: #2980b9;
+}
+.home-stats .st-pending {
+    background-color: #8e44ad;
+}
+.home-stats .st-items {
+    background-color: #1abc9c;
+}
+.home-stats .st-comments {
+    background-color: #34495e;
+}
+.latest .latest-users li{
+    padding: 5px 10px;
+    margin-bottom: 15px;
+    overflow: hidden;
+}
+.latest .latest-users li:nth-child(even){
+    background-color: #ddd;
+}
+.latest .latest-users li a.activate {
+    margin-right: 5px;
+}
+/* End Dashboard Page */

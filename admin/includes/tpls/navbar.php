@@ -1,5 +1,5 @@
 <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-    <a class="navbar-brand" href="#"><?php echo lang('HOME') ?></a>
+    <a class="navbar-brand" href="dashboard.php"><?php echo lang('HOME') ?></a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#app-nav" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
     </button>
@@ -16,7 +16,7 @@
                 <a class="nav-link" href="#"><?php echo lang('STATISTICS') ?></a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="#"><?php echo lang('MEMBERS') ?></a>
+                <a class="nav-link" href="members.php?do=Manage"><?php echo lang('MEMBERS') ?></a>
             </li>
             <li class="nav-item">
                 <a class="nav-link" href="#"><?php echo lang('LOGS') ?></a>
