@@ -10,6 +10,33 @@ function getTitle()
     }
 }
 
+function CheckUserStatus($username)
+{
+    global $conn;
+    $stmt = $conn->prepare('Select 
+                                UserID,Username, Password 
+                            from 
+                                users 
+                            WHERE 
+                                username = ? 
+                            AND
+                                RegStatus = 0
+                            LIMIT 1');
+    $stmt->execute([$username]);
+    $row = $stmt->fetch();
+    $count = $stmt->rowCount();
+    return $count;
+}
+
+function getCategories()
+{
+    global $conn;
+    $stmt = $conn->prepare("SELECT * FROM categories ORDER BY CategoryID DESC");
+    $stmt->execute();
+    $rows = $stmt->fetchAll();
+    return $rows;
+}
+
 // Redirect Function
 /*
     ? Home Redirect Function
@@ -70,7 +97,7 @@ function GetItem($select, $tbl, $condition = '', $params = [])
     $row = $stmt->fetch();
     return $stmt->rowCount() == 1 ? $row : [];
 }
-function GetItems(string $select, string $tbl, string $condition = '', string $orderBy = '', array $params = []): array
+function GetItems(string $select, string $tbl, string $condition = '', string $orderByField = '', array $params = []): array
 {
     // Get Admin Data
     global $conn;
@@ -86,8 +113,8 @@ function GetItems(string $select, string $tbl, string $condition = '', string $o
         $sql .= " WHERE $condition";
     }
 
-    if ($orderBy) {
-        $sql .= " Order By $orderBy ";
+    if ($orderByField) {
+        $sql .= " Order By $orderByField DESC ";
     }
 
     $stmt = $conn->prepare($sql);
